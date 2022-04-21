@@ -1,13 +1,125 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,600&display=swap');
+.app {
+    margin-top: 40px;
+    margin-left: 450px;
+    border-radius: 15px;
+    padding-bottom: -20px;
+    height: 85vh;
+    width: 28vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: repeating-radial-gradient(#ffffc1, #ffd2a5, #d38cad, #8a79af);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  html {
+      font-family: 'sofia', sans-serif;
+      height: 100%;
+      width: 100%;
+      opacity: 0.8;
+      background-image: url("https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png"),
+      url("https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png"),
+      url("https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png"),
+      url("https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png"),
+      url("https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png");;
+      background-repeat: repeat-x;
+      background-position: 0 20%, 0 100%, 0 50%, 0 100%, 0 0;
+      background-size: 2500px, 800px, 500px 200px, 1000px, 400px 260px;
+      animation: 200s para infinite linear;
+      }
+      @keyframes para {
+        100% {
+          background-position: -5000px 20%, -800px 95%, 500px 50%, 1000px 100%,
+            400px 0;
+        }
+      }
+  
+      main {
+        min-height: 100vh;
+        background-image: linear-gradient(to bottom, rgba(0,0,0.6.2,0.2), rgba(0,0,0,0,0.75));
+        padding: 25px;
+      }
+      .inputbox .inputbar{
+        margin-top: 80px;
+        padding: 1rem;
+        border-radius: 10px;
+        border: none;
+        background-color: #fff;
+        font-family: "sofia", sans-serif;
+        min-width: 220px;
+        font-size: 1rem;
+        opacity: 0.8;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+      input:focus {
+        outline: none;
+      }
+      .inputbox:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+          }
+         
+      .container1 {
+        margin-top: 25px;
+      }
+      .city{
+        font-size: 32px;
+        font-weight: 500;
+        text-align: center;
+        
+      }
+  
+      .date {
+        margin-bottom: 120px;
+        margin-top: -150px;
+        font-family: 'sofia', sans-serif;
+        font-size: 18px;
+        color: aliceblue;
+        text-shadow:  1px 1px rgba(50, 50, 70, 0.5);
+        font-size: italic;
+        text-align: center;
+      }
+  
+      .weather-container {
+        text-align: center;
+      }
+      
+      .weather-icon{
+        height: 5rem;
+      }
+      .weather-condition {
+        font-size: 30px;
+        font-family: 'lora', sans-serif;
+      }
+      .temp {
+        font-size: 34px;
+        font-weight: 600;
+        font-family: 'lora', sans-serif;
+      }
+      .hi-lo {
+        font-size: 24px;
+        font-family: 'lora', sans-serif;
+      }
+    .feels {
+        font-size: 18px;
+        font-family: 'lora', sans-serif;
+    }
+    .humidity {
+        font-size: 18px;
+        font-family: 'lora', sans-serif;
+        }
